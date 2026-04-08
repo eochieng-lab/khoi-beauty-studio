@@ -3,34 +3,28 @@
    ================================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // ======================== PRELOADER ========================
-    const preloader = document.getElementById('preloader');
-
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('loaded');
-            document.body.classList.add('loaded');
-        }, 1800);
-    });
-
-    // Fallback: hide preloader after 4s max
-    setTimeout(() => {
-        preloader.classList.add('loaded');
-        document.body.classList.add('loaded');
-    }, 4000);
-
     // ======================== NAVBAR ========================
     const navbar = document.getElementById('navbar');
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
+    const logoWhite = document.querySelector('.logo-white');
+    const logoDark = document.querySelector('.logo-dark');
 
     // Scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
+            if (logoWhite && logoDark) {
+                logoWhite.style.display = 'none';
+                logoDark.style.display = 'block';
+            }
         } else {
             navbar.classList.remove('scrolled');
+            if (logoWhite && logoDark) {
+                logoWhite.style.display = 'block';
+                logoDark.style.display = 'none';
+            }
         }
     }, { passive: true });
 
