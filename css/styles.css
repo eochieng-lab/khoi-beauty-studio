@@ -88,6 +88,56 @@ button {
     padding: var(--section-padding) 0;
 }
 
+/* ======================== PAGE HEADER ======================== */
+.page-header {
+    padding: 140px 0 100px;
+    text-align: center;
+    background: var(--color-cream);
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(245, 243, 238, 0) 0%, rgba(245, 243, 238, 1) 100%);
+    z-index: 0;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 600;
+    color: var(--color-charcoal);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.page-title em {
+    font-style: italic;
+    color: var(--color-gold);
+}
+
+.page-desc {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color-gray);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
 /* ======================== PRELOADER ======================== */
 #preloader {
     position: fixed;
