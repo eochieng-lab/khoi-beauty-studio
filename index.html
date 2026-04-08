@@ -28,6 +28,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
 
+    <!-- GSAP + Lenis for cinematic animations -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -92,8 +97,16 @@
         </div>
     </header>
 
-    <!-- Cursor Glow -->
-    <div class="cursor-glow" id="cursorGlow"></div>
+    <!-- ======================== CUSTOM CURSOR ======================== -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- ======================== FILM GRAIN OVERLAY ======================== -->
+    <div class="film-grain"></div>
+
+    <!-- Morphing Blobs -->
 
     <!-- Morphing Blobs -->
     <div class="morphing-blob blob-1"></div>
@@ -109,7 +122,6 @@
             <div class="hero-slide active" style="background-image: url('https://khoibeauty.co.ke/wp-content/uploads/2025/07/african-american-woman-applying-makeup-by-makeup-artist-beauty-saloon-scaled.jpg')"></div>
             <div class="hero-slide" style="background-image: url('https://khoibeauty.co.ke/wp-content/uploads/2025/07/pexels-freestockpro-3800060-scaled.jpg')"></div>
             <div class="hero-slide" style="background-image: url('https://khoibeauty.co.ke/wp-content/uploads/2025/07/pexels-thishanabee-3993398-scaled.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('images/hero-new.jpg')"></div>
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -146,6 +158,32 @@
             <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
         </div>
     </section>
+
+    <!-- ======================== MARQUEE BAR ======================== -->
+    <div class="marquee-bar">
+        <div class="marquee-track">
+            <span>Facials</span><span class="dot">&#10022;</span>
+            <span>Hair Care</span><span class="dot">&#10022;</span>
+            <span>Lash Extensions</span><span class="dot">&#10022;</span>
+            <span>Bridal Makeup</span><span class="dot">&#10022;</span>
+            <span>Nail Art</span><span class="dot">&#10022;</span>
+            <span>Body Treatments</span><span class="dot">&#10022;</span>
+            <span>Braiding</span><span class="dot">&#10022;</span>
+            <span>Eyebrow Shaping</span><span class="dot">&#10022;</span>
+            <span>Waxing</span><span class="dot">&#10022;</span>
+            <span>Scalp Therapy</span><span class="dot">&#10022;</span>
+            <span>Facials</span><span class="dot">&#10022;</span>
+            <span>Hair Care</span><span class="dot">&#10022;</span>
+            <span>Lash Extensions</span><span class="dot">&#10022;</span>
+            <span>Bridal Makeup</span><span class="dot">&#10022;</span>
+            <span>Nail Art</span><span class="dot">&#10022;</span>
+            <span>Body Treatments</span><span class="dot">&#10022;</span>
+            <span>Braiding</span><span class="dot">&#10022;</span>
+            <span>Eyebrow Shaping</span><span class="dot">&#10022;</span>
+            <span>Waxing</span><span class="dot">&#10022;</span>
+            <span>Scalp Therapy</span><span class="dot">&#10022;</span>
+        </div>
+    </div>
 
     <!-- ======================== MARQUEE BAR ======================== -->
     <div class="marquee-bar">
