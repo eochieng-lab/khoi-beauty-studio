@@ -20,7 +20,7 @@
     --font-heading: 'Playfair Display', 'Georgia', serif;
     --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
 
-    --nav-height: 80px;
+    --nav-height: 100px;
     --section-padding: clamp(100px, 12vw, 160px);
     --container-width: 1320px;
 
