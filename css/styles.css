@@ -13,9 +13,11 @@
     --color-cream: #f7f3ee;
     --color-off-white: #faf9f7;
     --color-white: #ffffff;
-    --color-gold: #b8956a;
-    --color-gold-light: #d4b896;
-    --color-gold-dark: #9a7850;
+    --color-gold: #4E9772;
+    --color-gold-light: #5FA87F;
+    --color-gold-dark: #3E8F5F;
+    --color-green-pale: #CFEFC4;
+    --color-green-tint: #DDF2D7;
 
     --font-heading: 'Playfair Display', 'Georgia', serif;
     --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
@@ -838,7 +840,7 @@ body.loaded .animate-up.delay-4 { animation-delay: 0.7s; }
 
 /* ======================== STATS BAR ======================== */
 .stats-bar {
-    background: var(--color-charcoal);
+    background: var(--color-green-pale);
     padding: 64px 0;
     position: relative;
 }
