@@ -3,6 +3,9 @@
    ================================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Add loaded class immediately for animations
+    document.body.classList.add('loaded');
+
     // ======================== NAVBAR ========================
     const navbar = document.getElementById('navbar');
     const navToggle = document.getElementById('navToggle');
