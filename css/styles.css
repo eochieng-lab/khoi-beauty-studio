@@ -331,6 +331,8 @@ button {
     z-index: 1000;
     height: var(--nav-height);
     transition: all 0.5s var(--ease-out-expo);
+    background: #ffffff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.06);
 }
 
 .navbar.scrolled {
@@ -362,7 +364,7 @@ button {
 }
 
 .logo-img {
-    height: 120px;
+    height: 90px;
     width: auto;
     transition: opacity 0.3s ease;
 }
@@ -382,7 +384,7 @@ button {
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.65);
+    color: rgba(0,0,0,0.7);
     position: relative;
     padding: 4px 0;
     transition: color 0.3s ease;
@@ -423,7 +425,7 @@ button {
 }
 
 .nav-phone {
-    color: rgba(255,255,255,0.6);
+    color: rgba(0,0,0,0.6);
     padding: 8px;
     transition: color 0.3s ease;
 }
