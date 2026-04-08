@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
-    const logoWhite = document.querySelector('.logo-white');
-    const logoDark = document.querySelector('.logo-dark');
 
     // Scroll effect
     window.addEventListener('scroll', () => {
